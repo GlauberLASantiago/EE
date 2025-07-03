@@ -1,1 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Espirituais - Semana 2 - Santo Inácio de Loyola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Define as variáveis de cor para os temas */
+        :root {
+            --color-bg: #E7F0C7;
+            --color-surface: #FFFFFF;
+            --color-primary: #BCDFB9;
+            --color-secondary: #C87F8B;
+            --color-accent: #E9A97F;
+            --color-text-base: #000000;
+            --color-text-muted: #3a3a3a;
+            --color-border: #e0e0e0;
+        }
+
+        .dark {
+            --color-bg: #1a202c;
+            --color-surface: #2d3748;
+            --color-primary: #4a5568;
+            --color-secondary: #C87F8B;
+            --color-accent: #E9A97F;
+            --color-text-base: #E7F0C7;
+            --color-text-muted: #a0aec0;
+            --color-border: #4a5568;
+        }
+
+        /* Aplica as variáveis de cor com classes do Tailwind */
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--color-bg);
+            color: var(--color-text-base);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bg-custom-bg { background-color: var(--color-bg); }
+        .bg-custom-surface { background-color: var(--color-surface); }
+        .bg-custom-primary { background-color: var(--color-primary); }
+        .text-custom-base { color: var(--color-text-base); }
+        .text-custom-muted { color: var(--color-text-muted); }
+        .border-custom { border-color: var(--color-border); }
+        .fill-custom-base { fill: var(--color-text-base); }
+        
+        /* Estilo para a transição do ícone do acordeão */
+        .accordion-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .accordion-button[aria-expanded="true"] .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Estilo para as citações */
+        blockquote {
+            border-left: 4px solid var(--color-accent);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+    </style>
+</head>
+<body class="bg-custom-bg text-custom-base">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+        
+        <!-- Cabeçalho com Título e Seletor de Tema -->
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold text-custom-base">Exercícios Espirituais</h1>
+                <p class="text-lg text-custom-muted font-heading">Santo Inácio de Loyola</p>
+            </div>
+            <button id="theme-toggle" class="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-custom-bg focus:ring-custom-accent">
+                <svg id="theme-icon-light" class="w-6 h-6 fill-custom-base" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-icon-dark" class="w-6 h-6 hidden fill-custom-base" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-1.414a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 16a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4.464-1.05a1 1 0 00-1.414 1.414l.707.707a1 1 0 101.414-1.414l-.707-.707zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1z"></path></svg>
+            </button>
+        </header>
+
+        <main class="space-y-6">
+            <h2 class="text-2xl font-bold font-heading border-b-2 border-custom pb-2">Segunda Semana</h2>
+            
+            <!-- Acordeão para os dias -->
+            <div class="space-y-4">
+                
+                <!-- Dia 8 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 8: Segunda-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>Ontem, a orientação tratou da verdadeira “face” de Deus que Jesus Cristo nos revela. Nos exercícios dessa segunda semana, você poderá prestar especial atenção para a "face de Deus" que você, em sua vida e experiência espiritual, tem conhecido. Qual é o "rosto" de Deus para mim? A partir das imagens de Deus que fui configurando em minha vida, como essas "imagens" influenciam minha relação com Ele?</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“Deus me criou e continua a me “recriar” através de seus dons, do seu amor e da sua Graça. É Ele que alimenta a minha esperança e fortalece a minha vida”.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta segunda semana, peço a graça de reconhecer que o Deus que me criou, me ama e me acompanha sempre!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>Neste Exercício, você poderá meditar sobre os “destaques” anotados durante a semana, em seu diário espiritual. Se preferir, poderá retomar o texto bíblico da semana que foi mais significativo para você. Como o domingo é dia de celebrar com a Comunidade Eclesial, você também poderá tomar como matéria de sua oração um dos trechos bíblicos da liturgia dominical.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure fazer uma síntese das percepções da semana. Além das moções espirituais que por ventura tenham se manifestado nos exercícios, houve algum acontecimento, algum tipo de relacionamento humano, palavra ou evento que merece destaque? Como a vida tem permeado a minha oração e a minha oração inspirado a minha vida?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 9 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 9: Terça-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“Deus me criou e continua a me “recriar” através de seus dons, do seu amor e da sua Graça. É Ele que alimenta a minha esperança e fortalece a minha vida”.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta segunda semana, peço a graça de reconhecer que o Deus que me criou, me ama e me acompanha sempre!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“O Senhor me conhece verdadeiramente e me ama” (Salmo 138,1-18)</p>
+                            <blockquote>“Senhor, vós me perscrutais e me conheceis, sabeis tudo de mim, quando me sento ou me levanto. De longe penetrais meus pensamentos. Quando ando e quando repouso, vós me vedes, observais todos os meus passos. A palavra ainda me não chegou à língua, e já, Senhor, a conheceis toda. Vós me cercais por trás e pela frente, e estendeis sobre mim a vossa mão. Conhecimento assim maravilhoso me ultrapassa, ele é tão sublime que não posso atingi-lo. Para onde irei, longe de vosso Espírito? Para onde fugir, apartado de vosso olhar? Se subir até os céus, ali estareis; se descer à região dos mortos, lá vos encontrareis também. Se tomar as asas da aurora, se me fixar nos confins do mar, é ainda vossa mão que lá me levará, e vossa destra que me sustentará. Se eu dissesse: Pelo menos as trevas me ocultarão, e a noite, como se fora luz, me há de envolver. As próprias trevas não são escuras para vós, a noite vos é transparente como o dia e a escuridão, clara como a luz. Fostes vós que plasmastes as entranhas de meu corpo, vós me tecestes no seio de minha mãe. Sede bendito por me haverdes feito de modo tão maravilhoso. Pelas vossas obras tão extraordinárias, conheceis até o fundo a minha alma. Nada de minha substância vos é oculto, quando fui formado ocultamente, quando fui tecido nas entranhas subterrâneas. Cada uma de minhas ações vossos olhos viram, e todas elas foram escritas em vosso livro; cada dia de minha vida foi prefixado, desde antes que um só deles existisse. Ó Deus, como são insondáveis para mim vossos desígnios! E quão imenso é o número deles! Como contá-los? São mais numerosos que a areia do mar; se pudesse chegar ao fim, seria ainda com vossa ajuda.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 10 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 10: Quarta-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>1) MOÇÕES DO ESPÍRITO: no vocabulário de Santo Inácio de Loyola, “moção do espírito” significa toda e qualquer ação do Espírito Santo na consciência do exercitante. Esta ação pode se manifestar através de consolação ou desolação.</p>
+                            <p>2) CONSOLAÇÃO: alegria, paz, tranqüilidade, ânimo, generosidade, vontade de fazer o bem, sentido profundo da vida, desejo de prosseguir a caminhada espiritual e superar as dificuldades. A consolação é dom do Espírito Santo.</p>
+                            <p>3) DESOLAÇÃO: tristeza, ausência de sabor na oração, obscuridade na alma, auto-suficiência, enfraquecimento da fé, desesperança, falta de caridade, sentimentos de fraqueza e de incapacidade, impulsos de inveja, cobiça, ambição, arrogância....</p>
+                            <p>Nas anotações, procure registrar as moções que, por ventura, você tenha percebido em sua oração. Essas anotações poderão ser matéria de diálogo com um orientador espiritual e, ao longo da caminhada, serem como que “balizas” que vão apontando a direção. Momentos de serenidade na oração também podem ser muito ricos pela interiorização da Palavra de Deus.</p>
+                            <p>Assim, o importante não é sentir isso ou aquilo. Não pensar que a oração, para ser boa, tenha que ter grandes emoções! O importante mesmo é ir desenvolvendo uma atitude de abertura de espírito para que Deus possa agir em sua vida. É de bom proveito, contudo, perguntar-se sobre as causas que estão levando a uma ausência de moções: se podem significar um período de tranqüilidade na interiorização da Palavra, podem também ter como causa a falta de generosidade na prática dos Exercícios ou a não-observância ao método ou à assiduidade, pontualidade etc.</p>
+
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“Deus me criou e continua a me “recriar” através de seus dons, do seu amor e da sua Graça. É ele que alimenta a minha esperança e fortalece a minha vida”.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta segunda semana, peço a graça de reconhecer que o Deus que me criou, me ama e me acompanha sempre!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“O Senhor é o oleiro e eu sou a argila em suas mãos.” (Jeremias 18,1-6)</p>
+                            <blockquote>“Foi dirigida a Jeremias a palavra do Senhor nestes termos: Vai e desce à casa do oleiro, e ali te farei ouvir minha palavra. Desci, então, à casa do oleiro, e o encontrei ocupado a trabalhar no torno. Quando o vaso que estava a modelar não lhe saía bem, como sói acontecer nos trabalhos de cerâmica, punha-se a trabalhar em outro à sua maneira. Foi esta, então, a linguagem do Senhor: casa de Israel, não poderei fazer de vós o que faz esse oleiro? - oráculo do Senhor. O que é a argila em suas mãos, assim sois vós nas minhas, Casa de Israel.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 11 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 11: Quinta-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>A meditação. Segundo Santo Inácio de Loyola, “não é o muito saber que sacia e satisfaz a alma, mas o sentir e saborear as coisas internamente”. Como estou utilizando o texto bíblico? A leitura tem sido um procedimento meditativo e não simplesmente uma busca de novidades? Quanto tempo dedico à meditação da Palavra? Faço uma leitura pausada, sem pressa, procurando deter-me quando encontro “sabor” na leitura? Sinto alguma dificuldade de compreensão da Palavra?</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“Deus me criou e continua a me “recriar” através de seus dons, do seu amor e da sua Graça. É ele que alimenta a minha esperança e fortalece a minha vida”.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta segunda semana, peço a graça de reconhecer que o Deus que me criou, me ama e me acompanha sempre!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Desde o ventre de minha mãe vós sois o meu Deus” (Salmo 21,10-11.23-31)</p>
+                             <blockquote>“Sim, fostes vós que me tirastes das entranhas de minha mãe e, seguro, me fizestes repousar em seu seio. Eu vos fui entregue desde o meu nascer, desde o ventre de minha mãe vós sois o meu Deus. Então, anunciarei vosso nome a meus irmãos, e vos louvarei no meio da assembléia. Vós que temeis o Senhor, louvai-o; vós todos, descendentes de Jacó, aclamai-o; temei-o, todos vós, estirpe de Israel, porque ele não rejeitou nem desprezou a miséria do infeliz, nem dele desviou a sua face, mas o ouviu, quando lhe suplicava. De vós procede o meu louvor na grande assembléia, cumprirei meus votos na presença dos que vos temem. Os pobres comerão e serão saciados; louvarão o Senhor aqueles que o procuram: Vivam para sempre os nossos corações. Hão de se lembrar do Senhor e a ele se converter todos os povos da terra; e diante dele se prostrarão todas as famílias das nações, porque a realeza pertence ao Senhor, e ele impera sobre as nações. Todos os que dormem no seio da terra o adorarão; diante dele se prostrarão os que retornam ao pó. Para ele viverá a minha alma, há de servi-lo minha descendência. Ela falará do Senhor às gerações futuras e proclamará sua justiça ao povo que vai nascer: Eis o que fez o Senhor.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dia 12 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 12: Sexta-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“Deus me criou e continua a me “recriar” através de seus dons, do seu amor e da sua Graça. É ele que alimenta a minha esperança e fortalece a minha vida”.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta segunda semana, peço a graça de reconhecer que o Deus que me criou, me ama e me acompanha sempre!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Senhor, minha rocha e meu redentor” (Salmo 18)</p>
+                            <blockquote>“Narram os céus a glória de Deus, e o firmamento anuncia a obra de suas mãos. O dia ao outro transmite essa mensagem, e uma noite à outra a repete. Não é uma língua nem são palavras, cujo sentido não se perceba, porque por toda a terra se espalha o seu ruído, e até os confins do mundo a sua voz; aí armou Deus para o sol uma tenda. E este, qual esposo que sai do seu tálamo, exulta, como um gigante, a percorrer seu caminho. Sai de um extremo do céu, e no outro termina o seu curso; nada se furta ao seu calor. A lei do Senhor é perfeita, reconforta a alma; a ordem do Senhor é segura, instrui o simples. Os preceitos do Senhor são retos, deleitam o coração; o mandamento do Senhor é luminoso, esclarece os olhos. O temor do Senhor é puro, subsiste eternamente; os juízos do Senhor são verdadeiros, todos igualmente justos. Mais desejáveis que o ouro, que uma barra de ouro fino; mais doces que o mel, que o puro mel dos favos. Ainda que vosso servo neles atente, guardando-os com todo o cuidado; quem pode, entretanto, ver as próprias faltas? Purificai-me das que me são ocultas. Preservai, também, vosso servo do orgulho; não domine ele sobre mim, então serei íntegro e limpo de falta grave. Aceitai as palavras de meus lábios e os pensamentos de meu coração, na vossa presença, Senhor, minha rocha e meu redentor.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 13 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 13: Sábado</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>Lembre-se: oração não é magia! Deus somente age em sua vida se você livremente o permitir, desejar e querer. É de fundamental importância o primeiro passo (“Colocar-se na presença de Deus”), pois, na medida em que vou firmando convicção dessa presença de Deus em minha vida, meu ser vai se configurando na liberdade para a escuta e a resposta generosa à sua Palavra.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“Deus me criou e continua a me “recriar” através de seus dons, do seu amor e da sua Graça. É ele que alimenta a minha esperança e fortalece a minha vida”.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta segunda semana, peço a graça de reconhecer que o Deus que me criou, me ama e me acompanha sempre!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Senhor, meu Deus, as criaturas todas proclamam sua glória” (Salmo 103, 1-12.33-35)</p>
+                            <blockquote>“Bendize, ó minha alma, o Senhor! Senhor, meu Deus, vós sois imensamente grande! De majestade e esplendor vos revestis, envolvido de luz como de um manto. Vós estendestes o céu qual pavilhão, acima das águas fixastes vossa morada. De nuvens fazeis vosso carro, andais nas asas do vento; fazeis dos ventos os vossos mensageiros, e dos flamejantes relâmpagos vossos ministros. Fundastes a terra em bases sólidas que são eternamente inabaláveis. Vós a tínheis coberto com o manto do oceano, as águas ultrapassavam as montanhas. Mas à vossa ameaça elas se afastaram, ao estrondo de vosso trovão estremeceram. Elevaram-se as montanhas, sulcaram-se os vales nos lugares que vós lhes destinastes. Estabelecestes os limites, que elas não hão de ultrapassar, para que não mais tornem a cobrir a terra. Mandastes as fontes correr em riachos, que serpeiam por entre os montes. Ali vão beber os animais dos campos, neles matam a sede os asnos selvagens. Os pássaros do céu vêm aninhar em suas margens, e cantam entre as folhagens. Enquanto viver, cantarei à glória do Senhor, salmodiarei ao meu Deus enquanto existir. Possam minhas palavras lhe ser agradáveis! Minha única alegria se encontra no Senhor. Sejam tirados da terra os pecadores e doravante desapareçam os ímpios. Bendize, ó minha alma, ao Senhor! Aleluia.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 14 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 14: Domingo</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>Santo Inácio nos lembra que “ao que se exercita na primeira semana aproveita nada saber do que fará na segunda. De tal modo trabalhe na primeira semana, para alcançar o que busca, como se na segunda nada de bom esperasse encontrar” (EEs, 12ª Anotação).</p>
+                            <p>Assim, toda a generosidade deve consistir em praticar o melhor possível o atual exercício, pois, seria tentação do mau espírito levar o exercitante aos próximos exercícios, em detrimento do atual. Apenas, deve conhecer a matéria na oração do dia e, à noite, antes de dormir, ler o texto a ser meditado no dia seguinte.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“Deus me criou e continua a me “recriar” através de seus dons, do seu amor e da sua Graça. É ele que alimenta a minha esperança e fortalece a minha vida”.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta segunda semana, peço a graça de reconhecer que o Deus que me criou, me ama e me acompanha sempre!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>Procure, neste Exercício, meditar um trecho, frase ou palavra dos textos bíblicos da semana que passou, fazendo uma “repetição” dos aspectos que mais lhe tocaram na oração. Você também poderá tomar como matéria de sua oração um dos trechos bíblicos da liturgia dominical.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure fazer uma síntese das percepções da semana. Além das moções espirituais que por ventura tenham se manifestado nos exercícios, houve algum acontecimento, algum tipo de relacionamento humano, palavra ou evento que merece destaque? Como a vida tem permeado a minha oração e a minha oração inspirado a minha vida?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <script>
+        // Lógica para o seletor de tema
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const lightIcon = document.getElementById('theme-icon-light');
+        const darkIcon = document.getElementById('theme-icon-dark');
+        const htmlEl = document.documentElement;
+
+        // Função para aplicar o tema
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                htmlEl.classList.add('dark');
+                lightIcon.classList.add('hidden');
+                darkIcon.classList.remove('hidden');
+            } else {
+                htmlEl.classList.remove('dark');
+                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden');
+            }
+        };
+
+        // Verifica o tema salvo no localStorage ou a preferência do sistema
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        applyTheme(currentTheme);
+
+        // Adiciona o evento de clique ao botão
+        themeToggleBtn.addEventListener('click', () => {
+            const newTheme = htmlEl.classList.contains('dark') ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+
+        // Lógica para o acordeão
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                button.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
 
