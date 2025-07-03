@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Espirituais - Semana 4 - Santo Inácio de Loyola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Define as variáveis de cor para os temas */
+        :root {
+            --color-bg: #E7F0C7;
+            --color-surface: #FFFFFF;
+            --color-primary: #BCDFB9;
+            --color-secondary: #C87F8B;
+            --color-accent: #E9A97F;
+            --color-text-base: #000000;
+            --color-text-muted: #3a3a3a;
+            --color-border: #e0e0e0;
+        }
+
+        .dark {
+            --color-bg: #1a202c;
+            --color-surface: #2d3748;
+            --color-primary: #4a5568;
+            --color-secondary: #C87F8B;
+            --color-accent: #E9A97F;
+            --color-text-base: #E7F0C7;
+            --color-text-muted: #a0aec0;
+            --color-border: #4a5568;
+        }
+
+        /* Aplica as variáveis de cor com classes do Tailwind */
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--color-bg);
+            color: var(--color-text-base);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bg-custom-bg { background-color: var(--color-bg); }
+        .bg-custom-surface { background-color: var(--color-surface); }
+        .bg-custom-primary { background-color: var(--color-primary); }
+        .text-custom-base { color: var(--color-text-base); }
+        .text-custom-muted { color: var(--color-text-muted); }
+        .border-custom { border-color: var(--color-border); }
+        .fill-custom-base { fill: var(--color-text-base); }
+        
+        /* Estilo para a transição do ícone do acordeão */
+        .accordion-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .accordion-button[aria-expanded="true"] .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Estilo para as citações */
+        blockquote {
+            border-left: 4px solid var(--color-accent);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+    </style>
+</head>
+<body class="bg-custom-bg text-custom-base">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+        
+        <!-- Cabeçalho com Título e Seletor de Tema -->
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold text-custom-base">Exercícios Espirituais</h1>
+                <p class="text-lg text-custom-muted font-heading">Santo Inácio de Loyola</p>
+            </div>
+            <button id="theme-toggle" class="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-custom-bg focus:ring-custom-accent">
+                <svg id="theme-icon-light" class="w-6 h-6 fill-custom-base" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-icon-dark" class="w-6 h-6 hidden fill-custom-base" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-1.414a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 16a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4.464-1.05a1 1 0 00-1.414 1.414l.707.707a1 1 0 101.414-1.414l-.707-.707zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1z"></path></svg>
+            </button>
+        </header>
+
+        <main class="space-y-6">
+            <h2 class="text-2xl font-bold font-heading border-b-2 border-custom pb-2">Quarta Semana</h2>
+            
+            <!-- Acordeão para os dias -->
+            <div class="space-y-4">
+                
+                <!-- Dia 22 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 22: Segunda-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>Algumas imagens de Deus podem dificultar meu relacionamento com Ele. Eis algumas das falsas imagens, bem opostas à face de Deus que Jesus nos revelou:</p>
+                            <ul class="list-disc list-inside space-y-2 mt-2">
+                                <li>o “Deus castigador” que está a espreita de uma ocasião de falta para se deliciar no castigo;</li>
+                                <li>o “Deus opressor” que me submete a um regime que me reduz a um fantoche seu, sem liberdade, sem desejos, sem vontade própria;</li>
+                                <li>o “Deus ausente” que não se preocupa com o sofrimento humano, que não evita acidentes, que não livra o inocente da punição, alheio à realidade humana;</li>
+                                <li>o “Deus comerciante” que só dá algum bem ou graça se eu der uma contraprestação;</li>
+                                <li>o “Deus pronto-socorro” a quem busco somente em extrema necessidade e do qual cobro pronto-atendimento;</li>
+                                <li>o “Deus vitamina” que me serve apenas para turbinar minhas.</li>
+                            </ul>
+                             <p class="mt-4">Quais são as imagens que mais freqüentemente tenho de Deus? Estas imagens me ajudam na relação com Deus?</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“A oração me liberta de tudo o que me dificulta viver a plenitude do amor de Deus.”</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta quarta semana dos Exercícios, peço a Deus que Jesus Cristo seja o fundamento da minha vida.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Que Cristo habite pela fé em vossos corações, arraigados e consolidados na caridade” (Efésios 3,14-21)</p>
+                            <blockquote>“Por esta causa dobro os joelhos em presença do Pai, ao qual deve a sua existência toda família no céu e na terra, para que vos conceda, segundo seu glorioso tesouro, que sejais poderosamente robustecidos pelo seu Espírito em vista do crescimento do vosso homem interior. Que Cristo habite pela fé em vossos corações, arraigados e consolidados na caridade, a fim de que possais, com todos os cristãos, compreender qual seja a largura, o comprimento, a altura e a profundidade, isto é, conhecer a caridade de Cristo, que desafia todo o conhecimento, e sejais cheios de toda a plenitude de Deus. Àquele que, pela virtude que opera em nós, pode fazer infinitamente mais do que tudo quanto pedimos ou entendemos, a ele seja dada glória na Igreja, e em Cristo Jesus, por todas as gerações de eternidade. Amém.”</blockquote>
+
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 23 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 23: Terça-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>A liberdade espiritual. Deus nos chama para vivermos a liberdade em plenitude, segundo sua Palavra. Nosso desenvolvimento espiritual consiste, pois em caminharmos nesta direção, procurando superar condicionamentos, determinismos e afetos (desordenados) que nos dificultam a adesão integral de nosso ser a esta vocação humana. A atitude indiferença frente às coisas, pessoas, projeto, é a condição primeira para que, discernindo, eu possa escolher efetivamente o que é melhor para mim. Assim, sempre antes de tomar uma decisão em que estão em jogo possibilidades que representam valores, devo procurar me colocar numa atitude de indiferença, pois, se não,a decisão ficará previamente determinada. A liberdade espiritual (“indiferença”) supõe uma pessoa já exercitada na oração, mas, sem dúvida, torna-se imprescindível para quem quer prosseguir seu desenvolvimento espiritual. Assim, uma decisão tomada sem a prévia atitude de indiferença que possibilita buscar e realizar a vontade de Deus, acabaria por reforçar “afetos desordenados” e gerar novos determinismos e condicionantes que poderiam ir minando cada vez mais a liberdade espiritual. Quais são (ou foram) os critérios predominantes das decisões mais significativas da minha vida? Frente a decisões que eventualmente devo tomar, há algum afeto que dificulta a minha liberdade espiritual?</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“A oração me liberta de tudo o que me dificulta viver a plenitude do amor de Deus.”</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta quarta semana dos Exercícios, peço a Deus que Jesus Cristo seja o fundamento da minha vida.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Seja qual for o grau a que chegamos, o que importa é prosseguir decididamente.” (Filipenses 3,7-16)</p>
+                            <blockquote>“Mas tudo isso, que para mim eram vantagens, considerei perda por Cristo. Na verdade, julgo como perda todas as coisas, em comparação com esse bem supremo: o conhecimento de Jesus Cristo, meu Senhor. Por ele tudo desprezei e tenho em conta de esterco, a fim de ganhar Cristo e estar com ele. Não com minha justiça, que vem da lei, mas com a justiça que se obtém pela fé em Cristo, a justiça que vem de Deus pela fé. Anseio pelo conhecimento de Cristo e do poder da sua Ressurreição, pela participação em seus sofrimentos, tornando-me semelhante a ele na morte, com a esperança de conseguir a ressurreição dentre os mortos. Não pretendo dizer que já alcancei (esta meta) e que cheguei à perfeição. Não. Mas eu me empenho em conquistá-la, uma vez que também eu fui conquistado por Jesus Cristo. Consciente de não tê-la ainda conquistado, só procuro isto: prescindindo do passado e atirando-me ao que resta para a frente, persigo o alvo, rumo ao prêmio celeste, ao qual Deus nos chama, em Jesus Cristo. Nós, mais aperfeiçoados que somos, ponhamos nisto o nosso afeto; e se tendes outro sentir, sobre isto Deus vos há de esclarecer. Contudo, seja qual for o grau a que chegamos, o que importa é prosseguir decididamente.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 24 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 24: Quarta-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>Ordenação dos Afetos. O processo de libertação pessoal, pela ação do Espírito Santo em minha vida, implica também que meus afetos não determinem minha vida em direção diversa daquela que, à luz da oração, tenho escolhido para mim. Ordenar os afetos, neste sentido, é fazer com que todo o meu ser, especialmente, uma dimensão tão importante como a afetiva, esteja disposta a isso. O que sinto em relação ao que me proponho? Quais são os “apegos” que me impedem de estabelecer relações humanamente autênticas? O que pode estar dificultando a minha adesão à vivência do Evangelho?</p>
+
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“A oração me liberta de tudo o que me dificulta viver a plenitude do amor de Deus.”</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta quarta semana dos Exercícios, peço a Deus que Jesus Cristo seja o fundamento da minha vida.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Tu, porém, vai e anuncia o Reino de Deus.” (Lucas 9,57-62)</p>
+                            <blockquote>“Enquanto caminhavam, um homem lhe disse: Senhor, seguir-te-ei para onde quer que vás. Jesus replicou-lhe: As raposas têm covas e as aves do céu, ninhos, mas o Filho do Homem não tem onde reclinar a cabeça. A outro disse: Segue-me. Mas ele pediu: Senhor, permite-me ir primeiro enterrar meu pai. Mas Jesus disse-lhe: Deixa que os mortos enterrem seus mortos; tu, porém, vai e anuncia o Reino de Deus. Um outro ainda lhe falou: Senhor, seguir-te-ei, mas permite primeiro que me despeça dos que estão em casa. Mas Jesus disse-lhe: Aquele que põe a mão no arado e olha para trás, não é apto para o Reino de Deus.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 25 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 25: Quinta-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“A oração me liberta de tudo o que me dificulta viver a plenitude do amor de Deus.”</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta quarta semana dos Exercícios, peço a Deus que Jesus Cristo seja o fundamento da minha vida.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Amarei o Senhor, meu Deus, com todo o meu ser.” (Deuteronômio 6,4-9)</p>
+                             <blockquote>“Ouve, ó Israel! O Senhor, nosso Deus, é o único Senhor. Amarás o Senhor, teu Deus, de todo o teu coração, de toda a tua alma e de todas as tuas forças. Os mandamentos que hoje te dou serão gravados no teu coração. Tu os inculcarás a teus filhos, e deles falarás, seja sentado em tua casa, seja andando pelo caminho, ao te deitares e ao te levantares. Atá-los-ás à tua mão como sinal, e os levarás como uma faixa frontal diante dos teus olhos. Tu os escreverás nos umbrais e nas portas de tua casa.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dia 26 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 26: Sexta-feira</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“A oração me liberta de tudo o que me dificulta viver a plenitude do amor de Deus.”</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta quarta semana dos Exercícios, peço a Deus que Jesus Cristo seja o fundamento da minha vida.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Senhor, meu Deus, eu creio que a ti nada é impossível.” (Marcos 10,17-27)</p>
+                            <blockquote>“Tendo ele saído para se pôr a caminho, veio alguém correndo e, dobrando os joelhos diante dele, suplicou-lhe: "Bom Mestre, que farei para alcançara vida eterna?" Jesus disse-lhe: "Por que me chamas bom? Só Deus é bom. Conheces os mandamentos: não mates; não cometas adultério; não furtes; não digas falso testemunho; não cometas fraudes; honra pai e mãe." Ele respondeu-lhe: "Mestre, tudo isto tenho observado desde a minha mocidade." Jesus fixou nele o olhar, amou-o e disse-lhe: "Uma só coisa te falta; vai, vende tudo o que tens e dá-o aos pobres e terás um tesouro no céu. Depois, vem e segue-me. Ele entristeceu-se com estas palavras e foi-se todo abatido, porque possuía muitos bens. E, olhando Jesus em derredor, disse a seus discípulos: "Quão dificilmente entrarão no Reino de Deus os ricos!" Os discípulos ficaram assombrados com suas palavras. Mas Jesus replicou: "Filhinhos, quão difícil é entrarem no Reino de Deus os que põem a sua confiança nas riquezas! É mais fácil passar o camelo pelo fundo de uma agulha do que entrar o rico no Reino de Deus." Eles ainda mais se admiravam, dizendo a si próprios: "Quem pode então salvar-se?" Olhando Jesus para eles, disse: "Aos homens isto é impossível, mas não a Deus; pois a Deus tudo é possível.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 27 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 27: Sábado</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>Para celebrar o perdão, a Igreja Católica dispõe de um rito sacramental. Através deste sacramento celebramos a misericórdia divina e renovamos nossa reconciliação com as pessoas e a Comunidade. O perdão, que é dom total da misericórdia de Deus, se dá a nós através do Sacramento da Reconciliação, que a Igreja, pelo seu Ministro Ordenado, nos transmite. Se você julgar mais oportuno, há outras formas também válidas. Não deixe, contudo, de celebrar a reconciliação e a misericórdia de Deus!</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“A oração me liberta de tudo o que me dificulta viver a plenitude do amor de Deus.”</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta quarta semana dos Exercícios, peço a Deus que Jesus Cristo seja o fundamento da minha vida.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>“Faça-se em mim segundo tua Palavra.” (Lucas 1,26-38)</p>
+                            <blockquote>“No sexto mês, o anjo Gabriel foi enviado por Deus a uma cidade da Galiléia, chamada Nazaré, a uma virgem desposada com um homem que se chamava José, da casa de Davi e o nome da virgem era Maria. Entrando, o anjo disse-lhe: Ave, cheia de graça, o Senhor é contigo. Perturbou-se ela com estas palavras e pôs-se a pensar no que significaria semelhante saudação. O anjo disse-lhe: Não temas, Maria, pois encontraste graça diante de Deus. Eis que conceberás e darás à luz um filho, e lhe porás o nome de Jesus. Ele será grande e chamar-se-á Filho do Altíssimo, e o Senhor Deus lhe dará o trono de seu pai Davi; e reinará eternamente na casa de Jacó, e o seu reino não terá fim. Maria perguntou ao anjo: Como se fará isso, pois não conheço homem? Respondeu-lhe o anjo: O Espírito Santo descerá sobre ti, e a força do Altíssimo te envolverá com a sua sombra. Por isso o ente santo que nascer de ti será chamado Filho de Deus. Também Isabel, tua parenta, até ela concebeu um filho na sua velhice; e já está no sexto mês aquela que é tida por estéril, porque a Deus nenhuma coisa é impossível. Então disse Maria: Eis aqui a serva do Senhor. Faça-se em mim segundo a tua palavra. E o anjo afastou-se dela.”</blockquote>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 28 -->
+                <div class="accordion-item bg-custom-surface rounded-lg shadow-md overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left font-heading font-semibold text-xl" aria-expanded="false">
+                        <span>Dia 28: Domingo</span>
+                        <svg class="accordion-icon w-6 h-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                    </button>
+                    <div class="accordion-content hidden p-6 pt-0">
+                        <div class="prose max-w-none text-custom-base leading-relaxed">
+                            <h4 class="font-bold text-lg font-heading mt-4">Orientação</h4>
+                            <p>Durante toda essa caminhada de iniciação aos Exercícios Espirituais, dei passos no encontro pessoal com Deus acreditando que quem procura assimilar a Palavra de Deus, de todo o coração, não será decepcionado. Que texto ou palavra das meditações mais me marcaram? O que foi mais significativo para meu entendimento, minha vontade e meu afeto? O que mais me consolou e o que mais me desolou? Em que aspectos ou dimensões preciso continuar meu desenvolvimento espiritual? Quais são os desafios e possibilidades para eu prosseguir minha caminhada de desenvolvimento espiritual?</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Primeiro Passo: Colocar-se na presença de Deus.</h4>
+                            <p>“A oração me liberta de tudo o que me dificulta viver a plenitude do amor de Deus.”</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Segundo Passo: pedir a Graça de Deus.</h4>
+                            <p>Nesta quarta semana dos Exercícios, peço a Deus que Jesus Cristo seja o fundamento da minha vida.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Terceiro Passo: meditar a Palavra de Deus.</h4>
+                            <p>Ao concluir esta etapa de iniciação dos Exercícios Espirituais, repetir a meditação de trechos bíblicos que mais marcaram. Se for melhor, dedicar outros Exercícios na semana que inicia para aprofundar e vivenciar determinados aspectos de sua experiência espiritual. Você também poderá tomar como matéria de sua oração um dos trechos bíblicos da liturgia dominical (conferir, neste site, “Liturgia Diária”).</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quarto Passo: fazer um colóquio com Deus.</h4>
+                            <p>“Converse” espontaneamente com Deus sobre o seu momento de oração.</p>
+                            
+                            <h4 class="font-bold text-lg font-heading mt-4">Quinto Passo: anotar.</h4>
+                            <p>Procure anotar o que mais lhe marcou neste Exercício Espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Seções Adicionais -->
+            <div class="bg-custom-surface rounded-lg shadow-md p-6 mt-10 space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold font-heading border-b-2 border-custom pb-2 mb-4">I - Apresentação</h3>
+                    <div class="space-y-4 text-custom-base leading-relaxed">
+                        <h4 class="font-bold text-lg font-heading">1) O que são os Exercícios Espirituais (EEs) de Santo Inácio de Loyola?</h4>
+                        <p>“Entende-se, por Exercícios Espirituais, qualquer modo de examinar a consciência, meditar, contemplar, orar vocal ou mentalmente e outras atividades espirituais” (Inácio de Loyola). Trata-se, pois, de uma metodologia de desenvolvimento espiritual, proposta por Santo Inácio de Loyola, fundador da Companhia de Jesus (Ordem Religiosa dos Padres e Irmãos Jesuítas). A sua primeira redação, pelo próprio Inácio, se deu no ano de 1522, refletindo sua experiência espiritual. Mais tarde, foi enriquecida com sua experiência apostólica e sua formação intelectual (Paris, 1528-1535 e Veneza, 1536-1537).</p>
+                        <h4 class="font-bold text-lg font-heading">2) Para que servem os Exercícios Espirituais?</h4>
+                        <p>A finalidade dos EEs pode ser resumida em três grandes metas:<br>
+                        - ser uma “escola de oração”, promovendo uma profunda união com Deus;<br>
+                        - desenvolver as condições humanas e espirituais para que o exercitante possa tomar uma decisão importante na sua vida;<br>
+                        - ser uma ajuda para a pessoa alcançar a liberdade de espírito, através da consciência do significado de sua existência, discernindo o que mais a conduz para a vida em plenitude.</p>
+                        <h4 class="font-bold text-lg font-heading">3) O que significa “método de exercício espiritual”?</h4>
+                        <p>Significa que você, nos exercícios, não vai encontrar um tratado, uma teoria, nem mesmo, muito conteúdo. Mas, sim, um roteiro de exercícios. Como um roteiro de exercícios físicos, a matéria é desenvolvida pela própria pessoa, ao praticar os exercícios. Comparando-se a exercícios musicais, ou seja, um roteiro de exercícios para aprender a tocar um instrumento musical, a beleza da matéria está no resultado que a prática dos exercícios produzirem. Com o passar do tempo, a execução da música torna-se espontânea e resulta na beleza da música, na sua afinação e na sintonia com a orquestra toda.</p>
+                        <h4 class="font-bold text-lg font-heading">4) Como praticar os Exercícios Espirituais?</h4>
+                        <p>Os EEs podem ser praticados na modalidade de um “RETIRO ESPIRITUAL”. Ou seja, afastando-se do seu local de vida e de atividades cotidianas, “retira-se” para um lugar mais propício à meditação. Para este fim, a Companhia de Jesus e outras congregações religiosas dispõem de casas de retiro espiritual (cf. endereços abaixo). Outra modalidade para a prática dos Exercícios Espirituais é a que se propõe neste site: “EXERCÍCIOS NA VIDA COTIDIANA” (EVC). Neste caso, sem se afastar de seus afazeres diários e se retirar a um lugar isolado, você poderá fazer os exercícios no dia-a-dia de sua vida.</p>
+                        <h4 class="font-bold text-lg font-heading">5) Como praticar os Exercícios na Vida Cotidiana (EVC)?</h4>
+                        <p>Se você optar por fazer uma experiência espiritual seguindo a proposta dos EVC do presente site, observe o seguinte:<br>
+                        1º) Durante trinta dias, para cada dia, você seguirá um roteiro com proposta de meditação.<br>
+                        2º) Procure se ater somente ao conhecimento do roteiro a ser exercitado em seguida, pois, trata-se de um caminho a ser percorrido espiritualmente, em oração, e não apenas intelectualmente.<br>
+                        3º) Planeje sua caminhada espiritual: nestes trinta dias, dedique 30´ (trinta minutos) diários à meditação. Se possível, faça o exercício no início do dia, antes de iniciar os afazeres do dia, em ambiente silencioso que possibilite a concentração de todo o seu ser. No restante do dia você poderá retomar o Exercício, repetindo a frase ou palavra do texto bíblico que mais lhe marcou. Se você não puder dedicar esses trinta minutos exclusivos para o Exercício, você poderá fazê-lo até mesmo enquanto estiver em trânsito para o trabalho, ou em algum intervalo, durante o dia. Neste caso, você poderá fazer essa leitura antes de sair de casa ou imprimir a página do Exercício Diário ou memorizar uma frase ou uma palavra que mais te chamou atenção no texto. Quanto ao tempo de oração, Santo Inácio insiste na fidelidade diária e na pontualidade, pois essa “disciplina espiritual” é importante para você ir adquirindo um hábito espiritual.</p>
+                        <h4 class="font-bold text-lg font-heading">6) Orientação / acompanhamento espiritual?</h4>
+                        <p>Se você tiver acesso facilitado, em sua Paróquia ou Comunidade, a alguém que já tenha feito os EEs completos, procure, preferencialmente no final de cada semana (ou após os trinta dias), um acompanhamento espiritual. Nesta orientação espiritual, você poderá narrar os momentos mais significativos de sua caminhada espiritual e receber ajuda para discernir os próximos passos. Se possível, procure participar de um grupo de partilha dos EVC, acompanhado por pessoa experiente em orientação espiritual. Para dúvidas práticas, você poderá acessar o contato deste site, conforme está abaixo e no final de cada semana de EEs.</p>
+                        <h4 class="font-bold text-lg font-heading">7) O roteiro de EEs.</h4>
+                        <p>O que se apresenta neste site é uma proposta de um mês de exercícios diários, correspondente à iniciação dos EEs. É um roteiro com matérias específicas para cada uma das quatro semanas de oração. Após esta fase de iniciação, se você desejar um aprofundamento da experiência na prática dos Exercícios Espirituais de Santo Inácio de Loyola, sugerimos buscar orientação especializada em algum dos centros de espiritualidade inaciana (cf. endereços no abaixo). Contudo, você mesmo poderá formular um roteiro de caminhada espiritual. Para isso, o texto do Evangelho da Liturgia Diária é excelente (cf., neste site, “Evangelho do Dia” ou “Liturgia Diária”).</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold font-heading border-b-2 border-custom pb-2 mb-4">II - Roteiro Básico dos Exercícios Diários</h3>
+                    <div class="space-y-4 text-custom-base leading-relaxed">
+                        <p>Para praticar os EEs, procure memorizar os cinco passos descritos abaixo, pois serão seguidos diariamente:</p>
+                        <h4 class="font-bold text-lg font-heading">Primeiro Passo: Colocar-se na presença de Deus</h4>
+                        <p>Oração é diálogo! Nesse caso, diálogo com Deus! Por isso, é imprescindível para a oração firmar convicção de que efetivamente esse alguém está comigo, para me ouvir e me falar, para relacionar-se comigo como duas pessoas que convivem e partilham dons e bens. Sempre, ao iniciar a oração, dedique um tempo para tomar consciência da presença de Deus em sua vida, “aqui e agora”.</p>
+                        <h4 class="font-bold text-lg font-heading">Segundo Passo: Pedir a Graça de Deus</h4>
+                        <p>Trata-se, neste momento, de apresentar a Deus o pedido da Graça que quero e desejo alcançar na oração. Dizer o que quero e desejo (e repetir isso várias vezes) fortalece a vontade e configura a mente e o afeto para acolher a vontade de Deus. Há um pedido próprio para cada fase dos exercícios. Conforme a dinâmica dos EEs, o pedido faz parte de uma pedagogia que nos possibilita um gradativo desenvolvimento espiritual. Contudo, é importante você formular este pedido com suas próprias palavras. O mesmo pedido deverá ser repetido em todos os Exercícios da semana.</p>
+                        <h4 class="font-bold text-lg font-heading">Terceiro Passo: Meditar a Palavra de Deus</h4>
+                        <p>Feito o pedido, leia com atenção o texto bíblico proposto para o Exercício do dia. O que Deus está me dizendo através desta palavra? O que isso pode significar para mim, na situação em que vivo atualmente? Demorar-se na meditação do texto bíblico, sem pressa, permitindo que a Palavra de Deus ecoe no íntimo de seu ser e existir. Saboreie interiormente cada palavra, cada frase. Durante o dia, você poderá recordar e repetir diversas vezes a frase ou a palavra mais marcante do texto.</p>
+                        <h4 class="font-bold text-lg font-heading">Quarto Passo: Fazer um Colóquio com Deus</h4>
+                        <p>Conclua sua oração com um “colóquio” com Deus, ou seja, como que conversando com Deus a respeito do seu momento de oração, fale a Ele o que você tem sentido. Numa relação de confiança e amizade autêntica, não tenha receio de manifestar a Deus os verdadeiros sentimentos e pensamentos que o presente Exercício Espiritual suscitou em você. As “moções do Espírito” são instrumentos pelos quais Deus age no mais íntimo do ser humano.</p>
+                        <h4 class="font-bold text-lg font-heading">Quinto Passo: Anotar</h4>
+                        <p>Concluído o Exercício, procure anotar em seu diário espiritual as percepções mais significativas da oração. O que mais me marcou interiormente? Que sentimentos, moções ou percepções a oração suscitou em mim? Na medida do possível, procure um acompanhamento espiritual com um jesuíta ou alguém que já tenha feito os Exercícios Espirituais completos. Neste acompanhamento você poderá partilhar sua experiência espiritual, procurar discernir o caminho percorrido e a direção dos próximos passos. A anotação que você fizer no final de cada Exercício será matéria para a orientação espiritual.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold font-heading border-b-2 border-custom pb-2 mb-4">III - Orientação</h3>
+                     <div class="space-y-4 text-custom-base leading-relaxed">
+                        <p>1ª) Em cada semana você deverá repetir os mesmos passos, mudando, apenas o texto bíblico da meditação. Contudo, se em determinado Exercício o texto despertou em você moções significativas, livremente, você poderá retomá-lo em outros momentos.</p>
+                        <p>2ª) No domingo, você deverá fazer uma espécie de “repetição” dos momentos mais significativos dos exercícios da semana que passou. Como o domingo é dia de celebrar com a Comunidade Eclesial, você poderá tomar como matéria de sua oração um dos trechos bíblicos da liturgia dominical. Esse texto você poderá tirá-lo deste mesmo site (cf. “Liturgia Diária”).</p>
+                        <p>3ª) As orientações que aparecem no final do roteiro diário devem ser lidas fora do momento da oração. Como em todos os textos, você deve se deter na reflexão dessas orientações somente se houver aí alguma contribuição para o momento que você estiver vivendo e para o êxito da caminhada.</p>
+                        <p>4ª) Santo Inácio de Loyola nos chama atenção para a generosidade, uma atitude imprescindível para o sucesso dos Exercícios Espirituais: “muito aproveita entrar neles com grande ânimo e generosidade para com seu Criador e Senhor. Ofereça-lhe todo seu querer e liberdade, para que Deus se sirva, conforme Sua vontade, tanto de sua pessoa, como de tudo o que tem” (EEs, 5ª Anotação). Essa atitude de generosidade possibilita a você viver a comunicação com Deus numa relação de dom total. Pois, segundo Santo Inácio, amor é a partilha de dons e bens entre as pessoas que se amam.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script>
+        // Lógica para o seletor de tema
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const lightIcon = document.getElementById('theme-icon-light');
+        const darkIcon = document.getElementById('theme-icon-dark');
+        const htmlEl = document.documentElement;
+
+        // Função para aplicar o tema
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                htmlEl.classList.add('dark');
+                lightIcon.classList.add('hidden');
+                darkIcon.classList.remove('hidden');
+            } else {
+                htmlEl.classList.remove('dark');
+                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden');
+            }
+        };
+
+        // Verifica o tema salvo no localStorage ou a preferência do sistema
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        applyTheme(currentTheme);
+
+        // Adiciona o evento de clique ao botão
+        themeToggleBtn.addEventListener('click', () => {
+            const newTheme = htmlEl.classList.contains('dark') ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+
+        // Lógica para o acordeão
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                button.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
