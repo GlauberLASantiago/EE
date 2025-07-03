@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Espirituais - Início - Santo Inácio de Loyola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Define as variáveis de cor para os temas */
+        :root {
+            --color-bg: #E7F0C7;
+            --color-surface: #FFFFFF;
+            --color-primary: #BCDFB9;
+            --color-secondary: #C87F8B;
+            --color-accent: #E9A97F;
+            --color-text-base: #000000;
+            --color-text-muted: #3a3a3a;
+            --color-border: #e0e0e0;
+        }
+
+        .dark {
+            --color-bg: #1a202c;
+            --color-surface: #2d3748;
+            --color-primary: #4a5568;
+            --color-secondary: #C87F8B;
+            --color-accent: #E9A97F;
+            --color-text-base: #E7F0C7;
+            --color-text-muted: #a0aec0;
+            --color-border: #4a5568;
+        }
+
+        /* Aplica as variáveis de cor com classes do Tailwind */
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--color-bg);
+            color: var(--color-text-base);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bg-custom-bg { background-color: var(--color-bg); }
+        .bg-custom-surface { background-color: var(--color-surface); }
+        .bg-custom-primary { background-color: var(--color-primary); }
+        .text-custom-base { color: var(--color-text-base); }
+        .text-custom-muted { color: var(--color-text-muted); }
+        .border-custom { border-color: var(--color-border); }
+        .fill-custom-base { fill: var(--color-text-base); }
+
+        .week-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .week-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .dark .week-card:hover {
+             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-custom-bg text-custom-base">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+        
+        <!-- Cabeçalho com Título e Seletor de Tema -->
+        <header class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold text-custom-base">Exercícios Espirituais</h1>
+                <p class="text-lg text-custom-muted font-heading">Santo Inácio de Loyola</p>
+            </div>
+            <button id="theme-toggle" class="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-custom-bg focus:ring-custom-accent">
+                <svg id="theme-icon-light" class="w-6 h-6 fill-custom-base" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-icon-dark" class="w-6 h-6 hidden fill-custom-base" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-1.414a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 16a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4.464-1.05a1 1 0 00-1.414 1.414l.707.707a1 1 0 101.414-1.414l-.707-.707zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1z"></path></svg>
+            </button>
+        </header>
+
+        <main>
+            <!-- Seção Introdutória -->
+            <section class="bg-custom-surface rounded-lg shadow-md p-6 mb-10">
+                <h2 class="text-2xl font-bold font-heading mb-4">Bem-vindo à sua Jornada Espiritual</h2>
+                <div class="text-custom-base leading-relaxed space-y-4">
+                    <p>Este espaço é um convite para uma jornada interior de quatro semanas, baseada na metodologia dos Exercícios Espirituais de Santo Inácio de Loyola. Aqui, você encontrará um roteiro diário de oração e meditação, adaptado para ser vivido no seu cotidiano.</p>
+                    <p>O objetivo é aprofundar sua relação com Deus, encontrar clareza para as decisões da vida e alcançar uma maior liberdade de espírito. Permita-se dedicar um tempo a cada dia para este encontro, seguindo os passos propostos e abrindo o coração para a Palavra.</p>
+                    <p>Abaixo, você pode navegar e iniciar a sua jornada pela semana desejada.</p>
+                </div>
+            </section>
+
+            <!-- Navegação para as Semanas -->
+            <section>
+                <h2 class="text-2xl font-bold font-heading mb-6 text-center">Navegue pelas Semanas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Semana 1 -->
+                    <a href="semana1.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Primeira Semana</h3>
+                        <p class="text-custom-muted mt-2">Princípio e Fundamento: O Amor Criador de Deus</p>
+                    </a>
+                    <!-- Semana 2 -->
+                    <a href="semana2.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Segunda Semana</h3>
+                        <p class="text-custom-muted mt-2">Seguimento de Cristo: A Vida Pública de Jesus</p>
+                    </a>
+                    <!-- Semana 3 -->
+                    <a href="semana3.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Terceira Semana</h3>
+                        <p class="text-custom-muted mt-2">Paixão de Cristo: Acompanhar Jesus em seu Sofrimento</p>
+                    </a>
+                    <!-- Semana 4 -->
+                    <a href="semana4.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Quarta Semana</h3>
+                        <p class="text-custom-muted mt-2">Ressurreição: Contemplar a Alegria do Cristo Ressuscitado</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script>
+        // Lógica para o seletor de tema
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const lightIcon = document.getElementById('theme-icon-light');
+        const darkIcon = document.getElementById('theme-icon-dark');
+        const htmlEl = document.documentElement;
+
+        // Função para aplicar o tema
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                htmlEl.classList.add('dark');
+                lightIcon.classList.add('hidden');
+                darkIcon.classList.remove('hidden');
+            } else {
+                htmlEl.classList.remove('dark');
+                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden');
+            }
+        };
+
+        // Verifica o tema salvo no localStorage ou a preferência do sistema
+        const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        applyTheme(currentTheme);
+
+        // Adiciona o evento de clique ao botão
+        themeToggleBtn.addEventListener('click', () => {
+            const newTheme = htmlEl.classList.contains('dark') ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
+        });
+    </script>
+</body>
+</html>
