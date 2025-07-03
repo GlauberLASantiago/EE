@@ -52,14 +52,14 @@
         .border-custom { border-color: var(--color-border); }
         .fill-custom-base { fill: var(--color-text-base); }
 
-        .week-card {
+        .card-link {
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
-        .week-card:hover {
+        .card-link:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-        .dark .week-card:hover {
+        .dark .card-link:hover {
              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
         }
     </style>
@@ -86,34 +86,39 @@
                 <h2 class="text-2xl font-bold font-heading mb-4">Bem-vindo à sua Jornada Espiritual</h2>
                 <div class="text-custom-base leading-relaxed space-y-4">
                     <p>Este espaço é um convite para uma jornada interior de quatro semanas, baseada na metodologia dos Exercícios Espirituais de Santo Inácio de Loyola. Aqui, você encontrará um roteiro diário de oração e meditação, adaptado para ser vivido no seu cotidiano.</p>
-                    <p>O objetivo é aprofundar sua relação com Deus, encontrar clareza para as decisões da vida e alcançar uma maior liberdade de espírito. Permita-se dedicar um tempo a cada dia para este encontro, seguindo os passos propostos e abrindo o coração para a Palavra.</p>
+                    <p>O objetivo é aprofundar sua relação com Deus, encontrar clareza para as decisões da vida e alcançar uma maior liberdade de espírito. É recomendado ler as instruções antes de começar.</p>
                     <p>Abaixo, você pode navegar e iniciar a sua jornada pela semana desejada.</p>
                 </div>
             </section>
 
-            <!-- Navegação para as Semanas -->
+            <!-- Navegação para as Semanas e Instruções -->
             <section>
-                <h2 class="text-2xl font-bold font-heading mb-6 text-center">Navegue pelas Semanas</h2>
+                <h2 class="text-2xl font-bold font-heading mb-6 text-center">Navegue pelo Conteúdo</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Instruções -->
+                    <a href="instrucoes.html" class="card-link md:col-span-2 block bg-custom-accent rounded-lg shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold font-heading text-white">Instruções Gerais</h3>
+                        <p class="text-white opacity-90 mt-2">Leia antes de começar sua jornada</p>
+                    </a>
                     <!-- Semana 1 -->
-                    <a href="semana1.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                    <a href="semana1.html" class="card-link block bg-custom-surface rounded-lg shadow-md p-6 text-center">
                         <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Primeira Semana</h3>
-                        <p class="text-custom-muted mt-2">Princípio e Fundamento: O Amor Criador de Deus</p>
+                        <p class="text-custom-muted mt-2">Princípio e Fundamento</p>
                     </a>
                     <!-- Semana 2 -->
-                    <a href="semana2.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                    <a href="semana2.html" class="card-link block bg-custom-surface rounded-lg shadow-md p-6 text-center">
                         <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Segunda Semana</h3>
-                        <p class="text-custom-muted mt-2">Seguimento de Cristo: A Vida Pública de Jesus</p>
+                        <p class="text-custom-muted mt-2">Seguimento de Cristo</p>
                     </a>
                     <!-- Semana 3 -->
-                    <a href="semana3.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                    <a href="semana3.html" class="card-link block bg-custom-surface rounded-lg shadow-md p-6 text-center">
                         <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Terceira Semana</h3>
-                        <p class="text-custom-muted mt-2">Paixão de Cristo: Acompanhar Jesus em seu Sofrimento</p>
+                        <p class="text-custom-muted mt-2">Paixão de Cristo</p>
                     </a>
                     <!-- Semana 4 -->
-                    <a href="semana4.html" class="week-card block bg-custom-surface rounded-lg shadow-md p-6 text-center">
+                    <a href="semana4.html" class="card-link block bg-custom-surface rounded-lg shadow-md p-6 text-center">
                         <h3 class="text-xl font-bold font-heading" style="color: var(--color-secondary);">Quarta Semana</h3>
-                        <p class="text-custom-muted mt-2">Ressurreição: Contemplar a Alegria do Cristo Ressuscitado</p>
+                        <p class="text-custom-muted mt-2">Alegria da Ressurreição</p>
                     </a>
                 </div>
             </section>
